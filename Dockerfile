@@ -4,7 +4,7 @@ RUN apk add --no-cache postgresql-client
 
 WORKDIR /app
 
-COPY package.json .
+COPY package.json package-lock.json .
 
 RUN npm ci
 
